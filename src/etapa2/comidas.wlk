@@ -18,7 +18,14 @@ object bigMac {
 object sorgo {
 	method enegiaPorGramo() { return 9 }
 }
+object mijoFede {
+	var estaSeco = true
+	method energiaPorGramo () { 
+		if (estaSeco) { return 20} 
+		else {return 15 }
+}
 
+}
 object mijo {
 	var joules = 20
 	method energiaPorGramo () { return joules} 
@@ -32,5 +39,27 @@ object canelones {
 	method sacarSalsa () { joules = joules - 5}
 	method ponerQueso () { joules = joules + 7}
 	method SacarQueso () { joules = joules - 7}
-	
+// esta no estaba de todo bien
+}
+
+object canelonesFede {
+	var tieneSalsa = false
+	var tieneQueso = false
+
+method energiaPorGramo () {
+	var energia = 20 
+	if (tieneSalsa) {
+		energia += 5 
+	}
+	if (tieneQueso) {
+		energia += 7
+	}
+	return energia
+}
+
+method ponerSalsa () { tieneSalsa = true }
+method ponerQueso () { tieneQueso = true }
+method sacarSalsa () { tieneSalsa = false }
+method sacarQueso () { tieneQueso = false }
+
 }

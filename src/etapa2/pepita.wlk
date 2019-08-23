@@ -22,15 +22,13 @@ object pepita {
 		self.volar(5)
 		self.comer (alpiste, 80)
 		self.volar(5)
-		}
+	}
 	
 	method haceLoQueQuieras() { 
 		if (self.estaDebil()) {
-			self.comer(alpiste, 20)
-		// completar el método, de acuerdo a la estructura
-		// que se deja comentada aca abajo
-		} else if (self.estaFeliz()) {
-			//		
+			self.comer(alpiste, 20) 
 		}
-	}
+		if (self.estaFeliz()) {
+		 	self. volar (8)
+		}
 }
