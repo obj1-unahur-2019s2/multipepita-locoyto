@@ -17,9 +17,11 @@ object pepon {
 }
 
 object pipa {
-	var property kmsRecorrido = 0
+	var kmsRecorrido = 0
 	var gramosIngeridos = 0
 	
+	method kmsRecorridos () { return kmsRecorrido}
+	method volar (kms) { kmsRecorrido += kms }
 	method comer ( cosa, gramos ) { 
 		gramosIngeridos +=  cosa.energiaPorGramo() * gramos
 	}	
