@@ -1,7 +1,6 @@
 import comidas.*
 import pepita.*
 
-
 object pepon {
 	
 	var energia = 0
