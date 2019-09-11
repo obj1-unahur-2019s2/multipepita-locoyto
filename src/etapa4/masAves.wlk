@@ -18,6 +18,7 @@ object pepon {
 }
 
 object pipa {
+	
 	var kmsRecorrido = 0
 	var gramosIngeridos = 0
 	
